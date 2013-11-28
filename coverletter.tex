@@ -1,0 +1,111 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Stylish Cover Letter
+% XeLaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Original author:
+% Stefano (http://stefano.italians.nl/archives/63)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% The two fonts used in this template: Adobe Garamond Pro and Gill Sans
+% do not come with Windows by default. You will need to download them in
+% order to get an output as in the preview PDF. Otherwise, change those 
+% fonts to fonts that do come with Windows or comment out the lines to use 
+% the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4,pagesize]{scrlttr2}
+
+\usepackage{fontspec} % Allows font customization
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage[english]{babel} % Required to compile in Windows
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\defaultfontfeatures{Mapping=tex-text}
+  
+\renewcommand{\normalsize}{\fontsize{11}{17}\selectfont} % Sets the font size and leading
+\renewcommand*\rmdefault{iwona}
+
+
+%----------------------------------------------------------------------------------------
+% ÊPERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\setkomavar{fromname}{Philipp Kretzschmar} % Your name
+\setkomavar{fromaddress}{Herrmann-Kauffmann-Str. 16b\\22307 Hamburg} % Your address
+\setkomavar{fromphone}{01577-3874337} % Your phone number
+\setkomavar{fromemail}{philipp.kretzschmar@gmail.com} % Your email address
+\setkomavar{place}{} % City written before the date, put your city here if you want this
+\setkomavar{signature}{Philipp Kretzschmar} % Your name as you want it to appear in the signature
+
+% These are not used in this document, uncomment if you would like to use them and refer to them as \usekomavar{name}
+%\setkomavar{fromfax}{+1 (1)23 456789} % Your fax number
+%\setkomavar{fromurl}{http://www.johnsmith.com} % Your personal website
+%\setkomavar{frombank}{Postbank 9307157}
+
+%----------------------------------------------------------------------------------------
+% ÊHEADER SECTION
+%----------------------------------------------------------------------------------------
+
+\firsthead{
+\centering
+{\addfontfeature{LetterSpace=18.0}\fontsize{30}{30}\selectfont\scshape \usekomavar{fromname}}\\[5mm]
+\fontsize{18}{18}\selectfont\scshape PHP-Entwickler } % Your current job title
+
+%----------------------------------------------------------------------------------------
+% ÊFOOTER SECTION
+%----------------------------------------------------------------------------------------
+
+\firstfoot{
+\centering
+\addfontfeature{LetterSpace=20.0}\scshape
+{
+\renewcommand{\\}{\ {\large\textperiodcentered}\ }
+\usekomavar{fromaddress}
+}\\
+{\Large\Letter} \usekomavar{fromemail} \ {\Large\Telefon} \usekomavar{fromphone} % If you want your fax number or website URL showing, add it here; you may need to play around with spacing
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% COVER LETTER CONTENTS
+%----------------------------------------------------------------------------------------
+
+\begin{letter}{ % Address of the company you are applying to
+FERCHAU Engineering GmbH\\
+Herr Thorsten Grösch\\
+Nagelsweg 33-35 Hamburg
+Deutschland
+}
+
+\setkomavar{subject}{Bewerbung zum PHP-Programmierer} % This is the bold text saying 'Cover Letter', remove it if you don't like it
+
+\opening{Sehr geehrter Herr Grösch,}
+
+ich bin Philipp Kretzschmar, 25-jähriger Web-Developper aus Hamburg. Im Januar habe ich meine Ausbildung zum Fachinformatiker der Anwendungsentwicklung erfolgreich abgeschlossen und bin auf der Suche nach einer neuen Herausforderung. Dabei bin ich bei der Jobbörse der Bundesagentur für Arbeit auf Ihr Stellengesuch gestoßen.\\
+
+Mir ist mittlerweile wichtig, dass ich längerfristig an einem Projekt arbeiten kann. Denn ich habe großen Spaß daran, ein Projekt zu hegen und zu pflegen, kontinuierlich und evolutionär zu verbessern. Gut les- und wartbarer Code ist meine Leidenschaft. Und statt ähnliche Projekte nach Schema F zu wiederholen, bin ich Freund der Pro­zess­automatisierung. \\
+
+Mir ist bewusst, dass Softwareentwicklung auf Teamarbeit und guter Kommunikation beruht. Ich verfüge über ein analytisch-rationales Denkvermögen und eine gewissenhafte Arbeitsweise. Auch weiß ich, dass ich mich erst am Anfang meiner Entwicklerlaufbahn befinde und somit noch einiges zu lernen habe. Auch macht es mir Freude, neu Gelerntes an Kollegen weiter zu vermitteln.\\
+
+In meiner Freizeit arbeite an darüber hinaus an privaten Projekten \footnote{https://github.com/k0pernikus} und arbeite mich stets in neuen Themen ein. Ich freue mich auf eine Möglichkeit mich persönlich bei Ihnen vorstellen zu können. \\ \\
+
+Mit freundlichem Gruß,
+\usekomavar{signature}
+
+%----------------------------------------------------------------------------------------
+
+\end{letter}
+\end{document}
